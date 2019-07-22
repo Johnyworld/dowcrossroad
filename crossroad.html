@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115817106-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-115817106-1');
+    </script>
+-->
+    <meta charset="UTF-8">
+    <title>DOW - CrossRoad</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="crossroad.css">
+    <link rel="stylesheet" href="crossroad-rps.css">
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <img class="dow-logo" src="images/dow-logo-white.png">
+    </div>
+    <div class="content">
+        <div class="card card-settings">
+            <div class="card-inner">
+                <p class="card-settings-title">세팅</p>
+                <p class="card-conditions-read-more">게임에 사용 될 카드를 켜거나 끌 수 있습니다.</p>
+                <ul class="card-buttons card-buttons-settings">
+                    <li class="card-settings-list-item checked">기본 카드<span class="card-conditions-read-more">&#40;필수&#41;</span></li>
+                </ul>
+                <ul class="card-buttons">
+                    <li class="card-btns-start">게임 시작</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card card-settings card-settings-bg"></div>
+        <div class="card card-draw">
+            <ul class="card-buttons card-buttons-draw">
+                <li class="the-draw hide">카드를<br>뽑는다</li>
+            </ul>
+        </div>
+        <div class="card card-main">
+            <div class="card-inner">
+                <p class="card-title">제목입니다.</p>
+                <p class="card-number"><span class="card-number-now">1</span> / <span class="card-number-max">1</span>
+                </p>
+                <ul class="card-buttons card-conditions">
+                    <li class="the-condition">카드 발동조건 내용</li>
+                    <li class="btn-next-card">다음 카드 뽑기</li>
+                </ul>
+                <div class="card-choices hide">
+                    <p class="card-choices-text">크로스카드에 적혀있는 내용이 들어가는 공간입니다. 이곳에는 결과가 아닌 상황 설명만 간단히 들어갑니다.</p>
+                    <ul class="card-buttons card-choices-btns">
+                        <li class="card-choices-btns-item">버튼1</li>
+                        <li class="card-choices-btns-item hide">버튼2</li>
+                        <li class="card-choices-btns-item hide">버튼3</li>
+                    </ul>
+                </div>
+                <div class="card-results hide">
+                    <p class="card-results-text hide"></p>
+                    <p class="card-results-text hide"></p>
+                    <p class="card-results-text hide"></p>
+                    <ul class="card-buttons card-results-btns">
+                        <li class="btn-next-card">다음 카드 뽑기</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card card-bg"></div>
+    </div>
+    <script src="crossroad-array.js"></script>
+    <script src="crossroad.js"></script>
+</body>
+</html>
